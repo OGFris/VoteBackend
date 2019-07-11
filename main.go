@@ -7,6 +7,8 @@
 package main
 
 import (
+	_ "github.com/joho/godotenv/autoload"
+
 	"github.com/OGFris/VoteBackend/routes"
 	"github.com/OGFris/VoteBackend/utils"
 	"github.com/buaazp/fasthttprouter"
