@@ -22,6 +22,7 @@ func main() {
 
 	router := fasthttprouter.New()
 	router.GET("/candidates", routes.Candidates)
+	router.POST("/candidate", routes.PostCandidate)
 
 	s := &fasthttp.Server{
 		Handler:          router.Handler,
