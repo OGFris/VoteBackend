@@ -7,6 +7,7 @@
 package main
 
 import (
+	"github.com/OGFris/VoteBackend/routes"
 	"github.com/OGFris/VoteBackend/utils"
 	"github.com/buaazp/fasthttprouter"
 	"github.com/valyala/fasthttp"
@@ -20,6 +21,8 @@ func main() {
 	}
 
 	router := fasthttprouter.New()
+	router.GET("/candidates", routes.Candidates)
+
 	s := &fasthttp.Server{
 		Handler:          router.Handler,
 		DisableKeepalive: true,
