@@ -4,8 +4,9 @@ A backend server prototype for the Algerian's voting system.
 ## Installation
 
  **Requirements:**
-    - Mariadb v10.x or higher server.
-    - Create a .env following the .env.example patterns to configure the server.
+ 
+   - Mariadb v10.x or higher server.
+   - Create a .env following the .env.example patterns to configure the server.
     
  **Setting up the Mysql server:**
  
